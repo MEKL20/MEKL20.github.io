@@ -56,6 +56,7 @@
     font-weight: bold;
     color: white;
     justify-content: center;
+    flex-direction: column;
 }
 
 .gallery-iteminfo:hover {
@@ -67,6 +68,12 @@
     width: 20px;
 }
 
+.gallery-iteminfo span {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
 @media screen and (max-width: 480px) {
 
     .gallery-frame {
@@ -75,24 +82,28 @@
         padding-bottom: 0;
     }
 
-    .gallery-frame {
-        width: 100%;
-    }
-
     .gallery-iteminfo {
         position: relative;
-        justify-content: flex-end;
+        justify-content: space-between;
         font-weight: bold;
-        color: white;
         opacity: 1;
         width: auto;
         height: auto;
         color: black;
         font-weight: 100;
+        flex-direction: row;
+    }
+
+    .gallery-iteminfo span {
+        margin-bottom: 0;
     }
 
     .gallery-iteminfo:hover {
         background-color: transparent;
+    }
+
+    .eth{
+        content: url("https://cdn-icons.flaticon.com/png/512/1140/premium/1140445.png?token=exp=1646225037~hmac=4e31e4b2e08839ef6bcacb5d63baa615");
     }
 
 }
