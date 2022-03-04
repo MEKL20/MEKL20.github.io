@@ -122,6 +122,9 @@ nav form input:focus {
     display: none;
 }
 
+.btn-add-mobile {
+    display: none;
+}
 
 @media screen and (max-width: 1200px) {
     nav form {
@@ -146,14 +149,39 @@ nav form input:focus {
         justify-content: space-around;
         background-color: #ffffff;
         z-index: 1;
-        height: 2em;
-        padding: 1em;
+        height: 1.5em;
+        padding: .5em;
         box-shadow: 0 0 5px #c9c9c9;
     }
 
+    .btn-add-mobile {
+        display: flex;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        bottom: 1.5em;
+        right: .2em;
+        z-index: 1;
+        border-radius: 100%;
+        width: 60px;
+        height: 60px;
+        font-size: xx-large;
+        transition: .3s;
+        border: 2px solid #3652f4;
+        background: #3652f4;
+        color: white;
+    }
+
+    .btn-add-mobile:active{
+        background: white;
+        transform: translateY(.2em);
+        border-color: #3652f4;
+        color: #3652f4;
+    }
+
     .nav-mobile a {
-        width: 35px;
-        height: 35px;
+        width: 25px;
+        height: 25px;
     }
 
     .nav-mobile a img {
@@ -163,5 +191,10 @@ nav form input:focus {
     .nav-profile {
         border-radius: 50%;
         border: 1px solid #c9c9c9;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
     }
 }

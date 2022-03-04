@@ -74,6 +74,21 @@
     margin-bottom: 0.5em;
 }
 
+.btn-add-desktop {
+    border-radius: 8px;
+    border: 2px solid #3652f4;
+    background: #3652f4;
+    color: white;
+    margin-top: .1em;
+    transition: .5s;
+}
+
+.btn-add-desktop:hover {
+    background: white;
+    color: #3652f4;
+    box-shadow: 0 0 6px #3652f4;
+}
+
 @media screen and (max-width: 480px) {
 
     .gallery-frame {
@@ -106,4 +121,7 @@
         content: url("https://cdn.icon-icons.com/icons2/1384/PNG/512/eth-crypto-cryptocurrency-cryptocurrencies-cash-money-bank-payment_95149.png");
     }
 
+    .btn-add-desktop {
+        display: none;
+    }
 }
