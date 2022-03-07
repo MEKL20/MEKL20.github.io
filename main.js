@@ -1,5 +1,6 @@
 function calculateTax(taxYear, name, annualIncome, marriageStatus, dependentChildrenCount=0) {
-    let ptkp = 50000000  
+    let ptkp = 50000000
+    
     if (marriageStatus == "Lajang") ptkp += 15000000 * dependentChildrenCount
     else if (marriageStatus == "Menikah") ptkp = 60000000 + (15000000 * dependentChildrenCount)
     else if (marriageStatus == "Cerai") ptkp = 70000000 + (15000000 * dependentChildrenCount)
