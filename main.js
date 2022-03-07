@@ -7,5 +7,3 @@ function calculateTax(annualIncome) {
     else if (pph > 450000000) return pph *= .2
 
 }
-
-console.log(calculateTax(1000000000));
