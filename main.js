@@ -1,12 +1,14 @@
 function calculateTax(annualIncome, status, childrenCount=0) {
     let ptkp = 50000000  
-    if (status == "Menikah") ptkp = 60000000 + (15000000 * childrenCount)
+    if (status == "Lajang") ptkp
+    else if (status == "Menikah") ptkp = 60000000 + (15000000 * childrenCount)
     else if (status == "Cerai") ptkp = 70000000 + (15000000 * childrenCount)
 
-    let pph = annualIncome - ptkp
-    if (pph < 0)return 0
-    else if (pph < 200000001) return pph *= .1
-    else if (pph < 450000001) return pph *= .15
-    else if (pph > 450000000) return pph *= .2
+    let pkp = annualIncome - ptkp
+    let pph = pkp * .1
 
+    if ((pkp - 200000000) > 0) pph += (pkp - 200000000) * .2
+    if ((pkp - 250000000) > 0) pph += (pkp - 250000000) * .3
+
+    return pph
 }
