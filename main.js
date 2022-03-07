@@ -1,4 +1,4 @@
-function calculateTax(annualIncome) {
+function calculateTax(taxYear, name, annualIncome, marriageStatus, dependentChildrenCount=0) {
     let pph = annualIncome - 50000000
 
     if (pph < 0)return 0
