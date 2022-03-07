@@ -10,5 +10,3 @@ function calculateTax(annualIncome, status, childrenCount=0) {
     else if (pph > 450000000) return pph *= .2
 
 }
-
-console.log(calculateTax(1000000000, "Menikah"));
